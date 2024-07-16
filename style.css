@@ -1,0 +1,171 @@
+
+:root
+{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+
+   --Very_Dark_Blue: hsl(234, 12%, 34%);
+   --Grayish_Blue: hsl(229, 6%, 66%);
+   --Very_Light_Gray: hsl(0, 0%, 98%);
+
+
+}
+
+*
+{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+
+
+body
+{
+    background-color: var(--Very_Light_Gray);
+    height: 100vh;
+    width: 100vw;
+
+}
+
+
+main
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7vh;
+    gap: 20px;
+        
+}
+
+p{
+    color: var(--Grayish_Blue);
+}
+
+ header
+{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+    
+}
+
+
+header>p
+{
+    font-size: 1.9rem;
+    color: var(--Very_Dark_Blue);
+}
+
+header p:last-child
+{
+  font-size: 1.1rem;
+  line-height: 1.4;
+
+  max-width: 38vw;
+  text-align: center;
+}
+
+article
+{
+   
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    padding: 30px;
+    height: 40vh;
+    width: 25vw;
+  
+}
+
+
+
+  article .image-container
+{
+    display: flex;
+    justify-content: flex-end;
+    margin: 7vh  0px 4vh;
+
+}
+
+ .text-container
+{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+ .first
+{
+    border-top: 4px solid var(--Cyan);
+
+}
+
+.second-1
+{
+    border-top: 4px solid var(--Red);
+
+}
+
+.third
+{
+    border-top: 4px solid var(--Blue);
+
+}
+
+.second-2
+{
+    border-top: 4px solid var(--Orange);
+
+}
+
+.second{
+
+    display: flex;
+    flex-direction: column;
+    gap:20px ;
+}
+
+
+@media (max-width:900px)
+{
+
+    article .image-container img
+   {
+ 
+      height: 40px;
+      width: 40px;
+  };
+}
+
+@media screen and (max-width:768px)
+{
+    main
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:2vh;
+        gap: 20px;
+
+    }
+    article
+    {
+        width: 70vw;
+        height: 27vh;
+        padding-bottom: 10rem;
+    }
+    
+  
+}
